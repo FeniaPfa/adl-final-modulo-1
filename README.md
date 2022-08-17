@@ -1,7 +1,7 @@
 # Desafio-final
 ### Modulo Introducción al desarrollo web
 
-**Github Pages:** https://feniapfa.github.io/Desafio-final-modulo-1/
+**Github Pages:** https://feniapfa.github.io/adl-final-modulo-1/
 
 **Fork 1:** link
 
