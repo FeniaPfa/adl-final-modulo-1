@@ -1,0 +1,107 @@
+body{
+font-family: 'Poppins', sans-serif;
+}
+
+:root, html[data-theme="light"]{
+  --bg: #f2f2f2;
+  --content-bg: #fff;
+  --h-bg: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
+  --font-color: #000;
+  --hover-btn: linear-gradient(30deg, #0400ff, #4ce3f7);
+
+}
+
+html[data-theme="dark"]{
+  --bg: #0f172a;
+  --content-bg: #1e293b;
+  --h-bg: radial-gradient(circle, rgba(3,85,116,1) 0%, rgba(33,1,55,1) 100%);
+  --font-color: #fff;
+  --hover-btn: linear-gradient(30deg, #0400ff, #4ce3f7);;
+}
+
+[data-theme='light'] .d-block-light,
+[data-theme='dark'] .d-block-dark {
+    display: block !important;
+}
+
+body{
+  background: var(--bg);
+  color: var(--font-color);
+  transition: all .5s ease;
+  scroll-behavior: smooth;
+}
+
+.theme-toggler{
+  padding: .5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background: var(--h-bg);
+}
+
+.hero h1{
+  font-weight: 600;
+}
+
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero__avatar{
+  border-radius: 50%;
+  box-shadow: 30px 30px 100px 20px rgba(216,59,210,0.20), -50px -40px 100px 20px rgba(244,66,80,0.20), 0 8px 20px 1px rgb(0 0 0 / 30%);
+}
+
+.hero__icons button{
+  background: var(--content-bg);
+  border: none;
+box-shadow: 0 8px 20px 1px rgb(0 0 0 / 20%);
+  border-radius: 25%;
+  width: 3rem;
+  height: 3rem;
+  
+}
+
+.hero__icons i{
+  padding: .5rem;
+}
+
+.hero__icons button:hover{
+  background: var(--hover-btn);
+}
+
+.hero__icons a:not(:first-child){
+  margin-left: .6rem;
+}
+
+.github{
+  color: var(--font-color);
+}
+
+.discord{
+  color: #5865F2;
+}
+
+.linkedin{
+  color: #0e76a8;
+}
+
+.hero__icons i:hover{
+  color: #fff;
+}
+
+.hero__icon--down{
+  font-size: 2.5rem;
+  color: var(--font-color);
+}
