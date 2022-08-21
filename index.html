@@ -12,9 +12,9 @@
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 
   <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -23,21 +23,24 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 
 <body>
   <header>
     <!-- nav -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          
+            <i class="fas fa-bars"></i>
+          
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link"  href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
@@ -50,13 +53,14 @@
             </li>
           </ul>
 
-        </div>
-        <!-- Dark Theme toggle -->
+                  <!-- Dark Theme toggle -->
         <button id="theme-toggle" type="button" class="theme-toggler">
           <span class="d-block-light d-none"><i class="fas fa-moon"></i></span>
           <span class="d-block-dark d-none"><i class="fas fa-sun"></i></span>
         </button>
         <!-- Dark Theme toggle end -->
+        </div>
+
       </div>
     </nav>
     <!-- nav end -->
@@ -66,7 +70,7 @@
 
         <img class="hero__avatar" src="assets/img/ava.png" alt="" width="180px" />
         <h1 class="mt-5 mb-1">Fernanda Aguilar Pfannschmidt</h1>
-        <h3 class="mt-4">Frontend Developer</h3>
+        <h3 class="mt-4 text-muted">Frontend Developer</h3>
         <div class="hero__icons mt-3">
 
           <a href="https://github.com/Feniapfa" target="_blank"><button><i class="fab fa-github github"></i></button></a>
