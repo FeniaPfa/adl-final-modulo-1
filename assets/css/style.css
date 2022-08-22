@@ -2,13 +2,18 @@ body{
 font-family: 'Poppins', sans-serif;
 }
 
+
+ul li{
+  list-style-type: none;
+}
+
 :root, html[data-theme="light"]{
   --bg: #f2f2f2;
   --content-bg: #fff;
   --h-bg: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
   --font-color: #000;
   --hover-btn: linear-gradient(30deg, #0400ff, #4ce3f7);
-
+ --muted:#828282;
 
 }
 
@@ -18,7 +23,7 @@ html[data-theme="dark"]{
   --h-bg: radial-gradient(circle, rgba(3,85,116,1) 0%, rgba(33,1,55,1) 100%);
   --font-color: #fff;
   --hover-btn: linear-gradient(30deg, #0400ff, #4ce3f7);
-
+  --muted: #c4c4c4;
 }
 
 [data-theme='light'] .d-block-light,
@@ -94,7 +99,7 @@ body{
 .hero__icons button{
   background: var(--content-bg);
   border: none;
-box-shadow: 0 8px 20px 1px rgb(0 0 0 / 20%);
+  box-shadow: 0 8px 20px 1px rgb(0 0 0 / 20%);
   border-radius: 25%;
   width: 3rem;
   height: 3rem;
@@ -132,4 +137,37 @@ box-shadow: 0 8px 20px 1px rgb(0 0 0 / 20%);
 .hero__icon--down{
   font-size: 2.5rem;
   color: var(--font-color);
+}
+main p,main li{
+  color: var(--muted);
+}
+
+.sec-container{
+  background: var(--content-bg);
+  border-radius: 12px;
+}
+
+.about{
+  background: var(--content-bg);
+  border-radius: 12px;
+}
+
+.about__data ul li{
+  margin: 1rem 0;
+  color: var(--font-color);
+
+}
+
+.about__data ul li i{
+  margin-right: .5rem;
+  color: var(--muted);
+}
+
+.educ__item{
+  margin: 1rem 0;
+}
+
+.educ__item__text{
+  margin-left: 2rem;
+
 }

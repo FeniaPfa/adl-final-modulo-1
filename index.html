@@ -33,17 +33,17 @@
       <div class="container-fluid">
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          
-            <i class="fas fa-bars"></i>
-          
+
+          <i class="fas fa-bars"></i>
+
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link"  href="#home">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Curriculum</a>
@@ -53,12 +53,12 @@
             </li>
           </ul>
 
-                  <!-- Dark Theme toggle -->
-        <button id="theme-toggle" type="button" class="theme-toggler">
-          <span class="d-block-light d-none"><i class="fas fa-moon"></i></span>
-          <span class="d-block-dark d-none"><i class="fas fa-sun"></i></span>
-        </button>
-        <!-- Dark Theme toggle end -->
+          <!-- Dark Theme toggle -->
+          <button id="theme-toggle" type="button" class="theme-toggler">
+            <span class="d-block-light d-none"><i class="fas fa-moon"></i></span>
+            <span class="d-block-dark d-none"><i class="fas fa-sun"></i></span>
+          </button>
+          <!-- Dark Theme toggle end -->
         </div>
 
       </div>
@@ -73,30 +73,123 @@
         <h3 class="mt-4 text-muted">Frontend Developer</h3>
         <div class="hero__icons mt-3">
 
-          <a href="https://github.com/Feniapfa" target="_blank"><button><i class="fab fa-github github"></i></button></a>
+          <a href="https://github.com/Feniapfa" target="_blank"><button><i
+                class="fab fa-github github"></i></button></a>
 
 
-          <a href="https://discordapp.com/users/248516690860703745" target="_blank"><button><i class="fab fa-discord discord"></i></button></a>
+          <a href="https://discordapp.com/users/248516690860703745" target="_blank"><button><i
+                class="fab fa-discord discord"></i></button></a>
 
 
-          <a href="https://www.linkedin.com/in/fernanda-aguilar-p" target="_blank"><button><i class="fab fa-linkedin-in linkedin"></i></button></a>
+          <a href="https://www.linkedin.com/in/fernanda-aguilar-p" target="_blank"><button><i
+                class="fab fa-linkedin-in linkedin"></i></button></a>
 
         </div>
-        <a href="" class="hero__icon--down mt-5"><i class="fas fa-chevron-down"></i></a>
+        <a href="#about" class="hero__icon--down mt-5"><i class="fas fa-chevron-down"></i></a>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="about">
+  <main class="m-5">
+    <section id="about" class="about container">
 
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus veniam dolorum placeat labore
-        officiis rerum eaque et itaque corporis voluptas dolore, ut consequuntur tempora earum sequi? Amet, odio ullam.
-      </p>
+      <div class="row p-5">
+
+        <div class="about__text col-sm-12 col-lg-8">
+          <h2>Fernanda Aguilar P.</h2>
+          <h3 class="text-muted">Frontend Developer</h3>
+          <p>Soy estudiante autodidacta de Desarrollo Web Frontend con background en diseño gráfico.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga dolores deleniti quas.</p>
+        </div>
+        <div class="about__data col-sm-12 col-lg-4">
+          <ul>
+            <li><i class="fas fa-calendar-alt"></i>22 de Mayo 1993</li>
+            <li><i class="fas fa-map-marker-alt"></i>Villa Alemana, Chile</li>
+            <li><i class="fas fa-envelope"></i>fa.aguilarpfa@gmail.com</li>
+            <li><i class="fas fa-mobile-alt"></i>+569 5499xxxx</li>
+
+          </ul>
+        </div>
+      </div>
 
     </section>
 
-    <div class="resume"></div>
+    <section class="container">
+
+      <div class="row mt-4 edtech">
+        <div class="col-lg-6 col-sm-12">
+          <div class="educ sec-container p-5">
+            <!-- educ item -->
+            <div class="educ__item d-flex">
+              <img src="assets/img/adl.png" width="100px" height="100px" alt="">
+              <div class="educ__item__text">
+              <h5>Desafio Latam</h5>
+              <ul>
+                <li>2022 - 2023
+                  <br>
+                  Desarrollo Frontend React</li>
+
+              </ul>
+            </div>
+            </div>
+            <!-- educ item -->
+          <div class="educ__item d-flex">
+          <img src="assets/img/platzi.png" width="100px" height="100px" alt="">
+          <div class="educ__item__text">
+          <h5>Platzi</h5>
+          <ul>
+            <li>Curso de Frontend Developer</li>
+            <li>Curso Básico de JavaScript</li>
+            <li>Curso Práctico de JavaScript</li>
+            <li>Curso Profesional de Git y GitHub</li>
+            <li>Curso Básico de Programación Orientada a Objetos con JavaScript</li>
+            <li>Curso de Introducción al Desarrollo Backend</li>
+            <li>Curso de Introducción a React.js</li>
+          </ul>
+        </div>
+        </div>
+
+            <!-- educ item -->
+            <div class="educ__item d-flex">
+              <img src="assets/img/fcc.jpg" width="100px"  alt="">
+              <div class="educ__item__text">
+              <h5>FreecodeCamp</h5>
+              <ul>
+                <li>Desarrollo Frontend React</li>
+
+              </ul>
+            </div>
+            </div>
+
+
+            <!-- educ item -->
+            <div class="educ__item d-flex">
+              <img src="assets/img/duoc.png" width="100px" alt="">
+              <div class="educ__item__text">
+              <h5>DuocUC</h5>
+              <ul>
+                <li>Diseño Gráfico</li>
+
+              </ul>
+            </div>
+            </div>
+
+        </div>
+        </div>
+
+
+
+        <div class="col-lg-6 col-sm-12">
+          <div class="tech sec-container p-5">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quasi.</p>
+        </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
 
     <section class="projects"></section>
   </main>
