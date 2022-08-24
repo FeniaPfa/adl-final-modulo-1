@@ -43,13 +43,10 @@
               <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about">Curriculum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Curriculum</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Proyectos</a>
+              <a class="nav-link" href="#projects">Proyectos</a>
             </li>
           </ul>
 
@@ -90,38 +87,46 @@
     </div>
   </header>
 
-  <main class="m-5">
-    <section id="about" class="about container">
+  <main>
+    <div class="container">
+      <section id="about" class="about mx-1 mt-5">
 
-      <div class="row p-3">
+        <div class="row p-4">
 
-        <div class="about__text col-sm-12 col-lg-8">
-          <h2>Fernanda Aguilar P.</h2>
-          <h3 class="text-muted">Frontend Developer</h3>
-          <p>Soy estudiante autodidacta de Desarrollo Web Frontend con background en diseño gráfico.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga dolores deleniti quas.</p>
+
+          <div class="about__text col-sm-12 col-lg-8">
+            <h2>Fernanda Aguilar P.</h2>
+            <h3 class="text-muted">Frontend Developer</h3>
+            <p>Soy estudiante autodidacta de Desarrollo Web Frontend con background en diseño gráfico.
+              <br>
+              Me encanta la tecnología y la programación, por lo que disfruto de aprender nuevas tecnologias y herramientas digitales.
+            </p>
+          </div>
+          <div class="about__data col-sm-12 col-lg-4">
+            <ul>
+              <li><i class="fas fa-calendar-alt"></i>22 de Mayo 1993</li>
+              <li><i class="fas fa-map-marker-alt"></i>Villa Alemana, Chile</li>
+              <li><i class="fas fa-envelope"></i>fa.aguilarpfa@gmail.com</li>
+              <li><i class="fas fa-mobile-alt"></i>+569 5499xxxx</li>
+
+            </ul>
+          </div>
         </div>
-        <div class="about__data col-sm-12 col-lg-4">
-          <ul>
-            <li><i class="fas fa-calendar-alt"></i>22 de Mayo 1993</li>
-            <li><i class="fas fa-map-marker-alt"></i>Villa Alemana, Chile</li>
-            <li><i class="fas fa-envelope"></i>fa.aguilarpfa@gmail.com</li>
-            <li><i class="fas fa-mobile-alt"></i>+569 5499xxxx</li>
+      </section>
+    </div>
 
-          </ul>
-        </div>
-      </div>
 
-    </section>
 
-    <section class="container">
+    <section id="cv">
+
+      <div class="container">
 
       <div class="row mt-4 ed-container">
         <div class="col-lg-6 col-sm-12">
-          <div class="educ sec-container p-3">
+          <div class="educ sec-container p-4">
             <!-- educ item -->
             <div class="educ__item d-flex">
-              <img src="assets/img/adl.png" width="100px" height="100px" alt="">
+              <img src="assets/img/adl.png" width="50px" height="50px" alt="">
               <div class="educ__item__text">
                 <h5>Desafio Latam</h5>
                 <ul>
@@ -135,14 +140,14 @@
             </div>
             <!-- educ item -->
             <div class="educ__item d-flex">
-              <img src="assets/img/platzi.png" width="100px" height="100px" alt="">
+              <img src="assets/img/platzi.png" width="50px" height="50px" alt="">
               <div class="educ__item__text">
                 <h5>Platzi</h5>
                 <ul>
                   <li><i class="fas fa-caret-right"></i> Curso Básico de JavaScript</li>
                   <li><i class="fas fa-caret-right"></i> Curso Práctico de JavaScript</li>
                   <li><i class="fas fa-caret-right"></i> Curso Profesional de Git y GitHub</li>
-                  <li><i class="fas fa-caret-right"></i> Curso Básico de Programación Orientada a Objetos con JavaScript</li>
+                  <li><i class="fas fa-caret-right"></i> Curso Básico de POO con JavaScript</li>
                   <li><i class="fas fa-caret-right"></i> Curso de Introducción al Desarrollo Backend</li>
                   <li><i class="fas fa-caret-right"></i> Curso de Introducción a React.js</li>
                 </ul>
@@ -151,7 +156,7 @@
 
             <!-- educ item -->
             <div class="educ__item d-flex">
-              <img src="assets/img/fcc.jpg" width="100px" alt="">
+              <img src="assets/img/fcc.jpg" width="50px" height="50px" alt="">
               <div class="educ__item__text">
                 <h5>freeCodeCamp</h5>
                 <ul>
@@ -164,7 +169,7 @@
 
             <!-- educ item -->
             <div class="educ__item d-flex">
-              <img src="assets/img/duoc.png" width="100px" alt="">
+              <img src="assets/img/duoc.png" width="50px" height="50px" alt="">
               <div class="educ__item__text">
                 <h5>DuocUC</h5>
                 <ul>
@@ -181,44 +186,50 @@
 
         <div class="col-lg-6 col-sm-12">
           <div class="tech sec-container p-5">
+            <h5>Skill set</h5>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quasi.</p>
           </div>
         </div>
 
       </div>
 
+    </div>
     </section>
 
 
 
-    <section class="projects container mt-4">
+    <section id="projects" class="projects container mt-4">
       <h4 class="my-4">Proyectos</h4>
       <div class="row c-row">
 
         <!-- card -->
         <div class="col-sm-12 col-lg-3">
-        <div class="card ">
-          <img src="assets/img/d1.png" alt="">
-          <div class="card-body">
-            <h5>Curriculum</h5>
-            <p>Desafio 1 - HTML</p>
-            <a href="https://feniapfa.github.io/adl-d1/" target="_blank"><button class="btn p-btn">Demo</button></a>
-            <a href="https://github.com/FeniaPfa/adl-d1" target="_blank"><button class="btn p-btn">Code</button></a>
+          <div class="card ">
+            <img src="assets/img/d1.png" alt="">
+            <div class="card-body">
+              <h5>Curriculum</h5>
+              <p>Desafio 1 - HTML</p>
+              <div class="p-buttons">
+                <a href="https://feniapfa.github.io/adl-d1/" target="_blank"><button class="btn p-btn">Demo</button></a>
+                <a href="https://github.com/FeniaPfa/adl-d1" target="_blank"><button class="btn p-btn">Code</button></a>
+              </div>
+            </div>
           </div>
         </div>
-</div>
 
         <!-- card -->
         <div class="col-sm-12 col-lg-3">
-        <div class="card">
-          <img src="assets/img/d2.png" alt="">
-          <div class="card-body">
-            <h5>Landing Tienda</h5>
-            <p>Desafio 2 - CSS</p>
-            <a href="https://feniapfa.github.io/adl-d2/" target="_blank"><button class="btn p-btn">Demo</button></a>
-            <a href="https://github.com/FeniaPfa/adl-d2" target="_blank"><button class="btn p-btn">Code</button></a>
+          <div class="card">
+            <img src="assets/img/d2.png" alt="">
+            <div class="card-body">
+              <h5>Landing Tienda</h5>
+              <p>Desafio 2 - CSS</p>
+              <div class="p-buttons">
+                <a href="https://feniapfa.github.io/adl-d2/" target="_blank"><button class="btn p-btn">Demo</button></a>
+                <a href="https://github.com/FeniaPfa/adl-d2" target="_blank"><button class="btn p-btn">Code</button></a>
+              </div>
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- card -->
@@ -228,11 +239,13 @@
             <div class="card-body">
               <h5>Iguana Page</h5>
               <p>Desafio 3 - Posicionamiento</p>
-              <a href="https://feniapfa.github.io/adl-d3/" target="_blank"><button class="btn p-btn">Demo</button></a>
-              <a href="https://github.com/FeniaPfa/adl-d3" target="_blank"><button class="btn p-btn">Code</button></a>
+              <div class="p-buttons">
+                <a href="https://feniapfa.github.io/adl-d3/" target="_blank"><button class="btn p-btn">Demo</button></a>
+                <a href="https://github.com/FeniaPfa/adl-d3" target="_blank"><button class="btn p-btn">Code</button></a>
+              </div>
             </div>
           </div>
-          </div>
+        </div>
 
         <!-- card -->
         <div class="col-sm-12 col-lg-3">
@@ -241,11 +254,13 @@
             <div class="card-body">
               <h5>Cuppon</h5>
               <p>Desafio 4 - Bootstrap</p>
-              <a href="https://feniapfa.github.io/adl-d4/" target="_blank"><button class="btn p-btn">Demo</button></a>
-              <a href="https://github.com/FeniaPfa/adl-d4" target="_blank"><button class="btn p-btn">Code</button></a>
+              <div class="p-buttons">
+                <a href="https://feniapfa.github.io/adl-d4/" target="_blank"><button class="btn p-btn">Demo</button></a>
+                <a href="https://github.com/FeniaPfa/adl-d4" target="_blank"><button class="btn p-btn">Code</button></a>
+              </div>
             </div>
           </div>
-          </div>
+        </div>
 
       </div>
 

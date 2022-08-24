@@ -196,10 +196,16 @@ main p,main li{
   font-size: 2rem;
 }
 
+.p-buttons{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 .p-btn{
+  margin-top: 1rem;
   border: 1px solid #0d6efd;
   color: #0d6efd;
-  padding-inline: 2rem;
+  padding-inline: 1.5rem;
 }
 
 .p-btn a{
