@@ -16,8 +16,9 @@ ul{
   --content-bg: #fff;
   --h-bg: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
   --font-color: #000;
-  --hover-btn: linear-gradient(30deg, #0400ff, #4ce3f7);
+  --hover-btn: linear-gradient(30deg, #009efd, #2af598);
   --muted:#828282;
+  --lightblue:#17c7be;
 
 }
 
@@ -26,8 +27,9 @@ html[data-theme="dark"]{
   --content-bg: #1e293b;
   --h-bg: radial-gradient(circle, rgba(3,85,116,1) 0%, rgba(33,1,55,1) 100%);
   --font-color: #fff;
-  --hover-btn: linear-gradient(30deg, #0400ff, #4ce3f7);
+  --hover-btn: linear-gradient(30deg, #009efd, #2af598);
   --muted: #c4c4c4;
+  --lightblue:#61ede4;
 }
 
 [data-theme='light'] .d-block-light,
@@ -74,7 +76,7 @@ body{
 
 .hero{
   width: 100%;
-  height: 100vh;
+  height: 93vh;
   background-size: cover;
   background: var(--h-bg);
 }
@@ -85,6 +87,7 @@ body{
 
 .hero h3{
   font-weight: 600;
+  color: var(--lightblue);
 }
 
 .hero__container{
@@ -142,6 +145,7 @@ body{
   font-size: 2.5rem;
   color: var(--font-color);
 }
+
 main p,main li{
   color: var(--muted);
 }
@@ -156,6 +160,10 @@ main p,main li{
   border-radius: 12px;
 }
 
+.about h4{
+  color: var(--lightblue);
+}
+
 .about__data ul li{
   margin: 1rem 0;
   color: var(--font-color);
@@ -164,12 +172,32 @@ main p,main li{
 
 .about__data ul li i{
   margin-right: .5rem;
-  color: var(--muted);
+  color: var(--lightblue);
 }
+
+/* tech section */
+
+
+.tech img{
+  height: 80px;
+  margin: 1rem;
+}
+
+.github-logo{
+  height: 100px;
+  fill: var(--font-color);
+
+}
+
+
 /* education */
 
 .educ__item{
   margin: 1rem 0;
+}
+
+.educ__item__text i{
+  color: var(--lightblue);
 }
 
 .educ__item__text{
@@ -203,11 +231,17 @@ main p,main li{
 }
 .p-btn{
   margin-top: 1rem;
-  border: 1px solid #0d6efd;
-  color: #0d6efd;
+  border: 1px solid var(--lightblue);
+  color: var(--lightblue);
   padding-inline: 1.5rem;
 }
 
 .p-btn a{
   text-decoration: none;
+}
+
+.btn:hover{
+  background: var(--hover-btn);
+  color: #fff;
+  border-color: var(--lightblue);
 }
