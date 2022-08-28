@@ -54,8 +54,8 @@ body {
     scroll-behavior: smooth;
 }
 
-a{
-  text-decoration: none;
+a {
+    text-decoration: none;
 }
 
 ul li {
@@ -71,8 +71,9 @@ main li {
     color: var(--muted);
 }
 
-h2, h4{
-  font-weight: 600;
+h2,
+h4 {
+    font-weight: 600;
 }
 
 /* navbar */
@@ -168,12 +169,7 @@ h2, h4{
     color: var(--font-color);
 }
 
-@media (max-width: 576px) {
-    .hero__avatar {
-        width: 120px;
-    }
-}
-
+/* container style */
 .sec-container {
     background: var(--content-bg);
     border-radius: 12px;
@@ -197,12 +193,12 @@ h2, h4{
 
 /* tech section */
 
-.tech,
-.educ {
+.cv__skillset,
+.cv__educ {
     margin-bottom: 1rem;
 }
 
-.tech img {
+.cv__skillset img {
     height: 120px;
     margin: 1rem;
 }
@@ -211,15 +207,6 @@ h2, h4{
     height: 120px;
     fill: var(--font-color);
     margin: 1rem;
-}
-
-@media (max-width: 576px) {
-    .tech img {
-        height: 50px;
-    }
-    .github-logo {
-        height: 50px;
-    }
 }
 
 /* education */
@@ -236,11 +223,11 @@ h2, h4{
     margin-left: 2rem;
 }
 
-.c-row {
+/* projects */
+
+.projects__row {
     row-gap: 30px;
 }
-
-/* projects */
 
 .card {
     border: none;
@@ -266,7 +253,7 @@ h2, h4{
     margin-top: 1rem;
     border: 1px solid var(--lightblue);
     color: var(--lightblue);
-    padding-inline: 1.5rem;
+    padding-inline: 2rem;
 }
 
 .p-btn a {
@@ -281,8 +268,25 @@ h2, h4{
 
 /* footer */
 
-.footer__icons i{
-  color: var(--font-color);
-  font-size: 1.2rem;
-  margin: 1rem;
+.footer__icons i {
+    color: var(--font-color);
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.footer__icons i:hover{
+    color: var(--lightblue);
+}
+
+@media (max-width: 576px) {
+    .cv__skillset img {
+        height: 50px;
+    }
+    .github-logo {
+        height: 50px;
+    }
+
+    .hero__avatar {
+        width: 120px;
+    }
 }
