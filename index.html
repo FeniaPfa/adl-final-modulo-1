@@ -1,435 +1,583 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fernanda Aguilar P. | Frontend Developer</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fernanda Aguilar P. | Frontend Developer</title>
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+        />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
 
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    </head>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-</head>
+    <body>
+        <header>
+            <!-- nav -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button
+                        class="navbar-toggler ms-auto"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Curriculum</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects"
+                                    >Proyectos</a
+                                >
+                            </li>
+                        </ul>
 
-<body>
-  <header>
-    <!-- nav -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Curriculum</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Proyectos</a>
-            </li>
-          </ul>
-
-          <!-- Dark Theme toggle -->
-          <button id="theme-toggle" type="button" class="theme-toggler">
-            <span class="d-block-light d-none">
-              <i class="fas fa-moon"></i>
-            </span>
-            <span class="d-block-dark d-none">
-              <i class="fas fa-sun"></i>
-            </span>
-          </button>
-          <!-- Dark Theme toggle end -->
-        </div>
-      </div>
-    </nav>
-    <!-- nav end -->
-
-    <div id="home" class="hero text-center">
-      <div class="container hero__container">
-        <img class="hero__avatar" src="assets/img/ava.png" alt="Foto de perfil" />
-        <h1 class="mt-5 mb-1">Fernanda Aguilar Pfannschmidt</h1>
-        <h3 class="mt-4">Frontend Developer</h3>
-        <!-- Hero icons -->
-        <div class="hero__icons mt-3">
-          <a href="https://github.com/Feniapfa" target="_blank">
-            <button>
-              <i class="fab fa-github github"></i>
-            </button>
-          </a>
-
-          <a href="https://discordapp.com/users/248516690860703745" target="_blank">
-            <button>
-              <i class="fab fa-discord discord"></i>
-            </button>
-          </a>
-
-          <a href="https://www.linkedin.com/in/fernanda-aguilar-p" target="_blank">
-            <button>
-              <i class="fab fa-linkedin-in linkedin"></i>
-            </button>
-          </a>
-        </div>
-
-        <a href="#about" class="hero__icon--down mt-5"><i class="fas fa-chevron-down">
-
-        </i>
-      </a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <section id="about" class="about sec-container mx-1 mt-5">
-        <div class="row p-4">
-          <div class="about__text col-sm-12 col-lg-8">
-            <h2>Fernanda Aguilar P.</h2>
-            <h4>Frontend Developer</h4>
-            <p>
-              Soy estudiante autodidacta de Desarrollo Web
-              Frontend con background en diseño gráfico.
-              <br />
-              Me encanta la tecnología y la programación, por
-              lo que disfruto de aprender nuevas tecnologias y
-              herramientas digitales.
-            </p>
-          </div>
-
-          <div class="about__data col-sm-12 col-lg-4">
-            <ul>
-              <li>
-                <i class="fas fa-calendar-alt"></i>22 de
-                Mayo 1993
-              </li>
-              <li>
-                <i class="fas fa-map-marker-alt"></i>Villa
-                Alemana, Chile
-              </li>
-              <li>
-                <i class="fas fa-envelope"></i>fa.aguilarpfa@gmail.com
-              </li>
-              <li>
-                <i class="fas fa-mobile-alt"></i>+569
-                5499xxxx
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <section id="cv">
-      <div class="container">
-        <div class="row mt-4 ed-container">
-          <!-- skillset -->
-          <div class="col-lg-6 col-sm-12">
-            <div class="cv__skillset sec-container p-4">
-              <h4>Skill set</h4>
-
-              <img src="assets/img/html.png" alt="Logo HTML" />
-              <img src="assets/img/css.png" alt="Logo CSS" />
-              <img src="assets/img/bootstrap.png" alt="Logo Bootstrap" />
-              <br />
-              <img src="assets/img/js.png" alt="Logo Javascript" />
-              <img src="assets/img/git.png" alt="Logo Git" />
-              <svg class="github-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-              </svg>
-
-              <h4>Tools</h4>
-              <img src="assets/img/ai.png" alt="Logo Illustrator" />
-              <img src="assets/img/ps.png" alt="Logo Photoshop" />
-            </div>
-          </div>
-
-          <!-- education -->
-          <div class="col-lg-6 col-sm-12">
-            <div class="cv__educ sec-container p-4">
-              <h4>Educación</h4>
-              <!-- educ item -->
-              <div class="educ__item d-flex">
-                <img src="assets/img/adl.png" width="50px" height="50px" alt="Logo Desafío Latam" />
-                <div class="educ__item__text">
-                  <h5>Desafío Latam</h5>
-                  <ul>
-                    <li>
-                      2022 - 2023
-                      <br />
-                      <i class="fas fa-caret-right"></i>
-                      Desarrollo Frontend React
-                    </li>
-                  </ul>
+                        <!-- Dark Theme toggle -->
+                        <button
+                            id="theme-toggle"
+                            type="button"
+                            class="theme-toggler"
+                        >
+                            <span class="d-block-light d-none">
+                                <i class="fas fa-moon"></i>
+                            </span>
+                            <span class="d-block-dark d-none">
+                                <i class="fas fa-sun"></i>
+                            </span>
+                        </button>
+                        <!-- Dark Theme toggle end -->
+                    </div>
                 </div>
-              </div>
-              <!-- educ item -->
-              <div class="educ__item d-flex">
-                <img src="assets/img/platzi.png" width="50px" height="50px" alt="Logo Platzi" />
-                <div class="educ__item__text">
-                  <h5>Platzi</h5>
-                  <ul>
-                    <li>
-                      <i class="fas fa-caret-right"></i>
-                      Curso Básico de JavaScript
-                    </li>
-                    <li>
-                      <i class="fas fa-caret-right"></i>
-                      Curso Práctico de JavaScript
-                    </li>
-                    <li>
-                      <i class="fas fa-caret-right"></i>
-                      Curso Profesional de Git y
-                      GitHub
-                    </li>
-                    <li>
-                      <i class="fas fa-caret-right"></i>
-                      Curso Básico de POO con
-                      JavaScript
-                    </li>
-                    <li>
-                      <i class="fas fa-caret-right"></i>
-                      Curso de Introducción al
-                      Desarrollo Backend
-                    </li>
-                    <li>
-                      <i class="fas fa-caret-right"></i>
-                      Curso de Introducción a React.js
-                    </li>
-                  </ul>
+            </nav>
+            <!-- nav end -->
+
+            <div id="home" class="hero text-center">
+                <div class="container hero__container">
+                    <img
+                        class="hero__avatar"
+                        src="assets/img/ava.png"
+                        alt="Foto de perfil"
+                    />
+                    <h1 class="mt-5 mb-1">Fernanda Aguilar Pfannschmidt</h1>
+                    <h3 class="mt-4">Frontend Developer</h3>
+                    <!-- Hero icons -->
+                    <div class="hero__icons mt-3">
+                        <a href="https://github.com/Feniapfa" target="_blank">
+                            <button>
+                                <i class="fab fa-github github"></i>
+                            </button>
+                        </a>
+
+                        <a
+                            href="https://discordapp.com/users/248516690860703745"
+                            target="_blank"
+                        >
+                            <button>
+                                <i class="fab fa-discord discord"></i>
+                            </button>
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/fernanda-aguilar-p"
+                            target="_blank"
+                        >
+                            <button>
+                                <i class="fab fa-linkedin-in linkedin"></i>
+                            </button>
+                        </a>
+                    </div>
+
+                    <a href="#about" class="hero__icon--down mt-5"
+                        ><i class="fas fa-chevron-down"> </i>
+                    </a>
                 </div>
-              </div>
+            </div>
+        </header>
 
-              <!-- educ item -->
-              <div class="educ__item d-flex">
-                <img src="assets/img/fcc.jpg" width="50px" height="50px" alt="Logo freeCodeCamp" />
-                <div class="educ__item__text">
-                  <h5>freeCodeCamp</h5>
-                  <ul>
-                    <li>
-                      <i class="fas fa-caret-right"></i>
-                      Responsive Web Design
-                    </li>
-                  </ul>
+        <main>
+            <div class="container">
+                <section id="about" class="about sec-container mx-1 mt-5">
+                    <div class="row p-4">
+                        <div class="about__text col-sm-12 col-lg-8">
+                            <h2>Fernanda Aguilar P.</h2>
+                            <h4>Frontend Developer</h4>
+                            <p>
+                                Soy estudiante autodidacta de Desarrollo Web
+                                Frontend con background en diseño gráfico.
+                                <br />
+                                Me encanta la tecnología y la programación, por
+                                lo que disfruto de aprender nuevas tecnologias y
+                                herramientas digitales.
+                            </p>
+                        </div>
+
+                        <div class="about__data col-sm-12 col-lg-4">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-calendar-alt"></i>22 de
+                                    Mayo 1993
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>Villa
+                                    Alemana, Chile
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i
+                                    >fa.aguilarpfa@gmail.com
+                                </li>
+                                <li>
+                                    <i class="fas fa-mobile-alt"></i>+569
+                                    5499xxxx
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section id="cv">
+                <div class="container">
+                    <div class="row mt-4 ed-container">
+                        <!-- skillset -->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="cv__skillset sec-container p-4">
+                                <h4>Skill set</h4>
+
+                                <img
+                                    src="assets/img/html.png"
+                                    alt="Logo HTML"
+                                />
+                                <img src="assets/img/css.png" alt="Logo CSS" />
+                                <img
+                                    src="assets/img/bootstrap.png"
+                                    alt="Logo Bootstrap"
+                                />
+                                <br />
+                                <img
+                                    src="assets/img/js.png"
+                                    alt="Logo Javascript"
+                                />
+                                <img src="assets/img/git.png" alt="Logo Git" />
+                                <svg
+                                    class="github-logo"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 496 512"
+                                >
+                                    <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path
+                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                    />
+                                </svg>
+
+                                <h4>Tools</h4>
+                                <img
+                                    src="assets/img/ai.png"
+                                    alt="Logo Illustrator"
+                                />
+                                <img
+                                    src="assets/img/ps.png"
+                                    alt="Logo Photoshop"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- education -->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="cv__educ sec-container p-4">
+                                <h4>Educación</h4>
+                                <!-- educ item -->
+                                <div class="educ__item d-flex">
+                                    <img
+                                        src="assets/img/adl.png"
+                                        width="50px"
+                                        height="50px"
+                                        alt="Logo Desafío Latam"
+                                    />
+                                    <div class="educ__item__text">
+                                        <h5>Desafío Latam</h5>
+                                        <ul>
+                                            <li>
+                                                2022 - 2023
+                                                <br />
+                                                <i
+                                                    class="fas fa-caret-right"
+                                                ></i>
+                                                Desarrollo Frontend React
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- educ item -->
+                                <div class="educ__item d-flex">
+                                    <img
+                                        src="assets/img/platzi.png"
+                                        width="50px"
+                                        height="50px"
+                                        alt="Logo Platzi"
+                                    />
+                                    <div class="educ__item__text">
+                                        <h5>Platzi</h5>
+                                        <ul>
+                                            <li>
+                                                <i
+                                                    class="fas fa-caret-right"
+                                                ></i>
+                                                Curso Básico de JavaScript
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="fas fa-caret-right"
+                                                ></i>
+                                                Curso Práctico de JavaScript
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="fas fa-caret-right"
+                                                ></i>
+                                                Curso Profesional de Git y
+                                                GitHub
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="fas fa-caret-right"
+                                                ></i>
+                                                Curso Básico de POO con
+                                                JavaScript
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="fas fa-caret-right"
+                                                ></i>
+                                                Curso de Introducción al
+                                                Desarrollo Backend
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="fas fa-caret-right"
+                                                ></i>
+                                                Curso de Introducción a React.js
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- educ item -->
+                                <div class="educ__item d-flex">
+                                    <img
+                                        src="assets/img/fcc.jpg"
+                                        width="50px"
+                                        height="50px"
+                                        alt="Logo freeCodeCamp"
+                                    />
+                                    <div class="educ__item__text">
+                                        <h5>freeCodeCamp</h5>
+                                        <ul>
+                                            <li>
+                                                <i
+                                                    class="fas fa-caret-right"
+                                                ></i>
+                                                Responsive Web Design
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- educ item -->
+                                <div class="educ__item d-flex">
+                                    <img
+                                        src="assets/img/duoc.png"
+                                        width="50px"
+                                        height="50px"
+                                        alt="Logo DuocUC"
+                                    />
+                                    <div class="educ__item__text">
+                                        <h5>DuocUC</h5>
+                                        <ul>
+                                            <li>
+                                                <i
+                                                    class="fas fa-caret-right"
+                                                ></i>
+                                                Diseño Gráfico
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </section>
 
-              <!-- educ item -->
-              <div class="educ__item d-flex">
-                <img src="assets/img/duoc.png" width="50px" height="50px" alt="Logo DuocUC" />
-                <div class="educ__item__text">
-                  <h5>DuocUC</h5>
-                  <ul>
-                    <li>
-                      <i class="fas fa-caret-right"></i>
-                      Diseño Gráfico
-                    </li>
-                  </ul>
+            <!-- proyectos -->
+            <section id="projects" class="projects container mt-4 mb-5">
+                <h4 class="my-4">Proyectos</h4>
+                <div class="row projects__row">
+                    <!-- card 1 -->
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                            <img
+                                src="assets/img/d1.png"
+                                alt="Desafío Curriculum"
+                            />
+                            <div class="card-body">
+                                <h5>Curriculum</h5>
+                                <p>Desafío 1 - HTML</p>
+                                <div class="p-buttons">
+                                    <a
+                                        href="https://feniapfa.github.io/adl-d1/"
+                                        target="_blank"
+                                    >
+                                        <button class="btn p-btn">Demo</button>
+                                    </a>
+                                    <a
+                                        href="https://github.com/FeniaPfa/adl-d1"
+                                        target="_blank"
+                                    >
+                                        <button class="btn p-btn">Code</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                            <img
+                                src="assets/img/d2.png"
+                                alt="Desafío Landing Page"
+                            />
+                            <div class="card-body">
+                                <h5>Landing Tienda</h5>
+                                <p>Desafío 2 - CSS</p>
+                                <div class="p-buttons">
+                                    <a
+                                        href="https://feniapfa.github.io/adl-d2/"
+                                        target="_blank"
+                                    >
+                                        <button class="btn p-btn">Demo</button>
+                                    </a>
+                                    <a
+                                        href="https://github.com/FeniaPfa/adl-d2"
+                                        target="_blank"
+                                    >
+                                        <button class="btn p-btn">Code</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                            <img
+                                src="assets/img/d3.png"
+                                alt="Desafío Iguana Page"
+                            />
+                            <div class="card-body">
+                                <h5>Iguana Page</h5>
+                                <p>Desafío 3 - Posicionamiento</p>
+                                <div class="p-buttons">
+                                    <a
+                                        href="https://feniapfa.github.io/adl-d3/"
+                                        target="_blank"
+                                    >
+                                        <button class="btn p-btn">Demo</button>
+                                    </a>
+                                    <a
+                                        href="https://github.com/FeniaPfa/adl-d3"
+                                        target="_blank"
+                                    >
+                                        <button class="btn p-btn">Code</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <div class="row projects__row mt-4">
+                    <!-- card 4 -->
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                            <img src="assets/img/d4.png" alt="Desafío Cuppon" />
+                            <div class="card-body">
+                                <h5>Cuppon</h5>
+                                <p>Desafío 4 - Bootstrap</p>
+                                <div class="p-buttons">
+                                    <a
+                                        href="https://feniapfa.github.io/adl-d4/"
+                                        target="_blank"
+                                    >
+                                        <button class="btn p-btn">Demo</button>
+                                    </a>
+                                    <a
+                                        href="https://github.com/FeniaPfa/adl-d4"
+                                        target="_blank"
+                                    >
+                                        <button class="btn p-btn">Code</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 5 -->
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                            <img
+                                src="assets/img/d5.png"
+                                alt="Desafío Git y Github"
+                            />
+                            <div class="card-body">
+                                <h5>fdsw-github</h5>
+                                <p>Desafío 5 - Git y Github</p>
+                                <div class="p-buttons">
+                                    <a
+                                        href="https://feniapfa.github.io/fdsw-github/"
+                                        target="_blank"
+                                    >
+                                        <button class="btn p-btn">Demo</button>
+                                    </a>
+                                    <a
+                                        href="https://github.com/FeniaPfa/fdsw-github"
+                                        target="_blank"
+                                    >
+                                        <button class="btn p-btn">Code</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 6 -->
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                            <img
+                                src="assets/img/d6.png"
+                                alt="Desafío Portafolio"
+                            />
+                            <div class="card-body">
+                                <h5>Github Pages</h5>
+                                <p>Desafío 6 - Portafolio</p>
+                                <div class="p-buttons">
+                                    <a
+                                        href="https://feniapfa.github.io/adl-final-modulo-1/"
+                                        target="_blank"
+                                    >
+                                        <button class="btn p-btn">Demo</button>
+                                    </a>
+                                    <a
+                                        href="https://github.com/FeniaPfa/adl-final-modulo-1"
+                                        target="_blank"
+                                    >
+                                        <button class="btn p-btn">Code</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center">
+            <hr />
+            <div class="container">
+                <div class="footer__icons">
+                    <a href="https://github.com/Feniapfa" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a
+                        href="https://discordapp.com/users/248516690860703745"
+                        target="_blank"
+                    >
+                        <i class="fab fa-discord"></i>
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/fernanda-aguilar-p"
+                        target="_blank"
+                    >
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p>Copyright © Fernanda Aguilar P.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </footer>
 
-    <!-- proyectos -->
-    <section id="projects" class="projects container mt-4 mb-5">
-      <h4 class="my-4">Proyectos</h4>
-      <div class="row projects__row">
-        <!-- card 1 -->
-        <div class="col-sm-12 col-lg-4">
-          <div class="card">
-            <img src="assets/img/d1.png" alt="Desafío Curriculum" />
-            <div class="card-body">
-              <h5>Curriculum</h5>
-              <p>Desafío 1 - HTML</p>
-              <div class="p-buttons">
-                <a href="https://feniapfa.github.io/adl-d1/" target="_blank">
-                  <button class="btn p-btn">Demo</button>
-                </a>
-                <a href="https://github.com/FeniaPfa/adl-d1" target="_blank">
-                  <button class="btn p-btn">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            var toggle = document.getElementById("theme-toggle");
 
-        <!-- card 2 -->
-        <div class="col-sm-12 col-lg-4">
-          <div class="card">
-            <img src="assets/img/d2.png" alt="Desafío Landing Page" />
-            <div class="card-body">
-              <h5>Landing Tienda</h5>
-              <p>Desafío 2 - CSS</p>
-              <div class="p-buttons">
-                <a href="https://feniapfa.github.io/adl-d2/" target="_blank">
-                  <button class="btn p-btn">Demo</button>
-                </a>
-                <a href="https://github.com/FeniaPfa/adl-d2" target="_blank">
-                  <button class="btn p-btn">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+            var storedTheme =
+                localStorage.getItem("theme") ||
+                (window.matchMedia("(prefers-color-scheme: dark)").matches
+                    ? "dark"
+                    : "light");
+            if (storedTheme)
+                document.documentElement.setAttribute(
+                    "data-theme",
+                    storedTheme
+                );
 
-        <!-- card 3 -->
-        <div class="col-sm-12 col-lg-4">
-          <div class="card">
-            <img src="assets/img/d3.png" alt="Desafío Iguana Page" />
-            <div class="card-body">
-              <h5>Iguana Page</h5>
-              <p>Desafío 3 - Posicionamiento</p>
-              <div class="p-buttons">
-                <a href="https://feniapfa.github.io/adl-d3/" target="_blank">
-                  <button class="btn p-btn">Demo</button>
-                </a>
-                <a href="https://github.com/FeniaPfa/adl-d3" target="_blank">
-                  <button class="btn p-btn">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            toggle.onclick = function () {
+                var currentTheme =
+                    document.documentElement.getAttribute("data-theme");
+                var targetTheme = "light";
 
-      <div class="row projects__row mt-4">
-        <!-- card 4 -->
-        <div class="col-sm-12 col-lg-4">
-          <div class="card">
-            <img src="assets/img/d4.png" alt="Desafío Cuppon" />
-            <div class="card-body">
-              <h5>Cuppon</h5>
-              <p>Desafío 4 - Bootstrap</p>
-              <div class="p-buttons">
-                <a href="https://feniapfa.github.io/adl-d4/" target="_blank">
-                  <button class="btn p-btn">Demo</button>
-                </a>
-                <a href="https://github.com/FeniaPfa/adl-d4" target="_blank">
-                  <button class="btn p-btn">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+                if (currentTheme === "light") {
+                    targetTheme = "dark";
+                }
 
-        <!-- card 5 -->
-        <div class="col-sm-12 col-lg-4">
-          <div class="card">
-            <img src="assets/img/d5.png" alt="Desafío Git y Github" />
-            <div class="card-body">
-              <h5>fdsw-github</h5>
-              <p>Desafío 5 - Git y Github</p>
-              <div class="p-buttons">
-                <a href="https://feniapfa.github.io/fdsw-github/" target="_blank">
-                  <button class="btn p-btn">Demo</button>
-                </a>
-                <a href="https://github.com/FeniaPfa/fdsw-github" target="_blank">
-                  <button class="btn p-btn">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- card 6 -->
-        <div class="col-sm-12 col-lg-4">
-          <div class="card">
-            <img src="assets/img/d6.png" alt="Desafío Portafolio" />
-            <div class="card-body">
-              <h5>Github Pages</h5>
-              <p>Desafío 6 - Portafolio</p>
-              <div class="p-buttons">
-                <a href="https://feniapfa.github.io/adl-final-modulo-1/" target="_blank">
-                  <button class="btn p-btn">Demo</button>
-                </a>
-                <a href="https://github.com/FeniaPfa/adl-final-modulo-1" target="_blank">
-                  <button class="btn p-btn">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="text-center">
-    <hr />
-    <div class="container">
-      <div class="footer__icons">
-        <a href="https://github.com/Feniapfa" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-
-        <a href="https://discordapp.com/users/248516690860703745" target="_blank">
-          <i class="fab fa-discord"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/fernanda-aguilar-p" target="_blank">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </div>
-      <p>Copyright © Fernanda Aguilar P.</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-  <script>
-    var toggle = document.getElementById("theme-toggle");
-
-    var storedTheme =
-      localStorage.getItem("theme") ||
-      (window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light");
-    if (storedTheme)
-      document.documentElement.setAttribute(
-        "data-theme",
-        storedTheme
-      );
-
-    toggle.onclick = function () {
-      var currentTheme =
-        document.documentElement.getAttribute("data-theme");
-      var targetTheme = "light";
-
-      if (currentTheme === "light") {
-        targetTheme = "dark";
-      }
-
-      document.documentElement.setAttribute(
-        "data-theme",
-        targetTheme
-      );
-      localStorage.setItem("theme", targetTheme);
-    };
-  </script>
-</body>
-
+                document.documentElement.setAttribute(
+                    "data-theme",
+                    targetTheme
+                );
+                localStorage.setItem("theme", targetTheme);
+            };
+        </script>
+    </body>
 </html>
